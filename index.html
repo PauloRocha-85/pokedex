@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <div class="painel" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-perspective="500">
+        <img style="position: absolute; left:300px" width="70px" src="https://cdn3.iconfinder.com/data/icons/pokemon-go-3/512/pokemon_go_play_game_cinema_film_movie-512.png" alt="">
+        <h1>Pokédex</h1>
+        <div id="tela"></div>
+
+        <input type="text" id="entrada" placeholder="Digite seu pokemon">
+        <button onclick="buscar()"> <i class="fa-solid fa-magnifying-glass fa-bounce fa-2xl"></i> </button>
+
+        <br>
+        <button onclick="anterior()"> <i class="fa-solid fa-left-long fa-shake fa-2xl"></i> </button>
+        <button onclick="proximo()"> <i class="fa-solid fa-right-long fa-shake fa-2xl"></i> </button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>">
+</body>
+</html>
